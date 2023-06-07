@@ -1,0 +1,27 @@
+create new repository
+
+copy command line code
+put in a desktop folder
+
+cmd in folder
+
+MAKE SURE GIT.IGNORE IS IN THE FOLDER!!!!!!!
+
+2nd line of command line code (creates .git file ===repository)
+3rd line of command line code
+
+type:git status
+
+type:git add .
+
+type:git commit -m "first commit"
+
+type:git status
+
+type:git branch -M main
+
+add whole line with https link
+
+type:git push -u origin main
+
+after changes: git add .& git commit -m "second commit, etc " & git push -u origin main

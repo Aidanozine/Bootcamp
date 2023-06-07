@@ -1,0 +1,728 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="unique" onclick="magic()">Click here for magic!</p>
+
+    <script>
+        function magic() {
+        console.log("in magic");
+        };
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="unique" onclick="magic()">Click here for magic!</p>
+
+    <script>
+       document.getElementById("unique").onclick = function() { magic(); };
+       function magic() {
+        console.log("in magic");
+       }
+    </script>
+</body>
+</html> -->
+
+<!-- Exercise 11.1 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="unique">Click here for magic!</p>
+
+    <script>
+       document.getElementById("unique").addEventListener("click", magic);
+       function magic() {
+        console.log("in magic");
+       }
+    </script>
+</body>
+</html> -->
+
+<!-- Exercise 11.2 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", (e) => {
+        console.log(e);
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="unique" onload="unique()">Click here for magic!</p>
+    <script>
+        window.onload = function() {
+// whatever needs to happen after the page loads goes here
+        alert("window loaded");
+        }
+        document.addEventListener("DOMContentLoaded", (e) => {
+        alert("in unique function called from html. DOM loaded");
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="unique()">
+    <p id="unique">Click here for magic!</p>
+    <script>
+        function unique() {
+            alert("DOM loaded");
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- Exercise 11.3 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divy" onmouseover="changeColor()" style="width: 100px; height: 100px; background-color: pink"></div>
+
+    <script>
+        function changeColor() {
+            document.getElementById("divy").style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divy" style="width: 100px; height: 100px; background-color: pink"></div>
+    <script>
+        window.onload = function donenow() {
+            let divy = document.getElementById("divy");
+            console.log("Wassup!");
+            divy.addEventListener("mousedown",
+            function() {changeColor(this, "green");})
+            divy.addEventListener("mouseup",
+            function() {changeColor(this, "yellow");})
+            divy.addEventListener("dblclick",
+            function() {changeColor(this, "black");})
+            divy.addEventListener("mouseout",
+            function() {changeColor(this, "blue");})
+        }
+
+        function changeColor(el, color) {
+            el.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="triggerSomething()">Click</button>
+<script>
+function triggerSomething() {
+console.dir(event.target);
+console.log(event.target);
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="welcome">Hello</div>
+        <form>
+<input type="text" name="firstname" placeholder="First name" />
+<input type="text" name="lastname" placeholder="Last name" />
+<input type="button" onclick="sendInfo()" value="Submit" />
+        </form>
+<script>
+    function sendInfo() {
+    let p = event.target.parentElement;
+    message("Welcome " + p.firstname.value + " " + p.lastname.value);
+    }
+
+    function message(m) {
+    document.getElementById("welcome").innerHTML = m;
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        border: 1px solid black;
+        margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Bubbling events</div>
+<div id="output">
+1
+<div>
+2
+<div>
+3
+<div>
+4
+<div>5</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function bubble() {
+    console.log(this.innerText);
+    }
+let divs = document.getElementsByTagName("div");
+for (let i = 0; i < divs.length; i++) {
+divs[i].addEventListener("click", bubble);
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        border: 1px solid black;
+        margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Bubbling events</div>
+<div id="output">
+1
+<div>
+2
+<div>
+3
+<div>
+4
+<div>5</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function bubble() {
+    console.log(this.innerText);
+    }
+let divs = document.getElementsByTagName("div");
+for (let i = 0; i < divs.length; i++) {
+divs[i].addEventListener("click", bubble, true); //true reverses the bubble output
+}
+</script>
+</body>
+</html> -->
+
+<!-- Exercise 11.4 -->
+
+<!-- Exercise 11.5 -->
+
+<!-- Exercise 11.6 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="welcome">Hi there!</div>
+<form>
+<input type="text" name="firstname" placeholder="First name"
+oninput="logEvent()" />
+<input type="text" name="lastname" placeholder="Last name"
+onblur="logEvent()" />
+<input type="button" onclick="sendInfo()" value="Submit" />
+</form>
+    <script>
+        function logEvent() {
+        let p = event.target;
+        if (p.name == "firstname") {
+        message("First Name Changed to " + p.value);
+        } else {
+        message("Last Name Changed to " + p.value);
+        }
+        }
+        function sendInfo() {
+        let p = event.target.parentElement;
+        message("Welcome " + p.firstname.value + " " + p.lastname.
+        value);
+        }
+        function message(m) {
+        document.getElementById("welcome").innerHTML = m;
+        }
+</script>
+</body>
+</html> -->
+
+<!-- Exercise 11.7 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">JavaScript is fun!</div>
+    <input type="text" name="myNum1" onkeypress="numCheck()">
+    <input type="text" name="myNum2" onkeypress="numCheck2()">
+
+    <script>
+        function numCheck() {
+message("Number: " + !isNaN(event.key));
+return !isNaN(event.key);
+}
+function numCheck2() {
+message("Not a number: " + isNaN(event.key));
+return isNaN(event.key);
+}
+function message(m) {
+document.getElementById('wrapper').innerHTML = m;
+}
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">JavaScript is fun!</div>
+    <input type="text" name="myNum1" onkeypress="return numCheck()">
+    <input type="text" name="myNum2" onkeypress="return numCheck2()">
+
+    <script>
+        function numCheck() {
+message("Number: " + !isNaN(event.key));
+return !isNaN(event.key);
+}
+function numCheck2() {
+message("Not a number: " + isNaN(event.key));
+return isNaN(event.key);
+}
+function message(m) {
+document.getElementById('wrapper').innerHTML = m;
+}
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+height: 200px;
+width: 200px;
+padding: 20px;
+margin: 0 50px;
+display: inline-block;
+border: 1px solid black;
+}
+#dragme {
+background-color: red;
+}
+    </style>
+</head>
+<body>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">1
+        <div id="dragme" ondragstart="dStart()" draggable="true">
+            Drag Me Please!
+        </div>
+    </div>
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">2</div>
+
+    <script>
+        let holderItem;
+function dStart() {
+holderItem = event.target;
+}
+function nDrop() {
+event.preventDefault();
+}
+function dDrop() {
+event.preventDefault();
+if (event.target.className == "box") {
+event.target.appendChild(holderItem);
+}
+}
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="anotherpage.html" method="get">
+        <input type="text" placeholder="name" name="fname" />
+        <input type="text" placeholder="name" name="lname" />
+        <input type="submit" value="send" />
+        </form>
+</body>
+</html> -->
+
+<!-- Exercise 11.8
+
+Exercise 11.9 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper"></div>
+<form action="anotherpage.html" method="get" onsubmit="return valForm()">
+    <input type="text" id="firstName" name="firstName" placeholder="First name" />
+    <input type="text" id="lastName" name="lastName" placeholder="Last name" />
+    <input type="text" id="age" name="age" placeholder="Age" />
+    <input type="submit" value="submit" />
+</form>
+
+<script>
+    function valForm() {
+        var p = event.target.children;
+        if (p.firstName.value == "") {
+            message("Need a first name!!");
+            return false;
+        }
+        if (p.lastName.value == "") {
+            message("Need a last name!!");
+            return false;
+        }
+        if (p.age.value == "") {
+            message("Need an age!!");
+            return false;
+        }
+        return true;
+    }
+
+    function message(m) {
+        document.getElementById("wrapper").innerHTML = m;
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+background-color: purple;
+width: 100px;
+height: 100px;
+position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <button onclick="toTheRight()">Go right</button>
+    <div id="block"></div>
+
+    <script>
+    function toTheRight() {
+        let b = document.getElementById("block");
+        let x = 0;
+        setInterval(function () {
+            if (x === 600) {
+                clearInterval();
+            } else {
+                x++;
+                b.style.left = x + "px";
+            }
+        }, 2);
+    }
+    </script>
+</body>
+</html> -->
+
+<!--Exercise 11.1-->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!--Exercise 11.2-->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <div>red</div>
+        <div>orange</div>
+        <div>yellow</div>
+        <div>green</div>
+        <div>blue</div>
+        <div>purple</div>
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.3 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.4 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <div class="output"></div>
+        
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.5 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <div class="output"></div>
+        <input type="text" name="message" placeholder="Your Message">
+        <button class="btn1">Button 1</button>
+        <button class="btn2">Button 2</button>
+        <div>
+            <button class="btn3">Log</button>
+        </div>
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.6 -->
+<!-- <html>
+    <head>
+        <style>
+            .box {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box" id="box1">Box #1</div>
+            <div class="box" id="box2">Box #2</div>
+            <div class="box" id="box3">Box #3</div>
+            <div class="box" id="box4">Box #4</div>
+        </div>
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.7 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <div class="output1"></div>
+
+        <input type="text" placeholder="First Name" name="first"><br>
+        <input type="text" placeholder="Last Name" name="last"><br>
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.8 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <div class="output"></div>
+        <input type="text" name="myNum1">
+        <input type="text" name="myNum2">
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.9 -->
+<!-- <html>
+    <head>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                background-color: white;
+            }
+
+            .red {
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">1
+            <div id="dragme" draggable="true">
+                Drag Me Please!
+            </div>
+        </div>
+        <div class="box">2</div>
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.10 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <form action="index2.html" method="get">
+            First: <input type="text" name="first">
+            <br>Last: <input type="text" name="last">
+            <br>Age: <input type="number" name="age">
+            <br><input type="submit" value="submit">
+        </form>
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 11.11 -->
+<!-- <html>
+    <head>
+        <style>
+    div {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    }
+        </style>
+    </head>
+
+    <body>
+        <div id="block"></div>
+
+        <script src="Chapter 11.js"></script>
+    </body>
+</html> -->

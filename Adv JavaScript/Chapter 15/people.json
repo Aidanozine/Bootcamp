@@ -1,0 +1,19 @@
+[
+    {
+      "first": "John",
+      "last": "Doe",
+      "topic": "JavaScript"
+    },
+  
+    {
+      "first": "Selena",
+      "last": "Webber",
+      "topic": "HTML"
+    },
+  
+    {
+      "first": "Greg",
+      "last": "Finity",
+      "topic": "CSS"
+    }
+  ]

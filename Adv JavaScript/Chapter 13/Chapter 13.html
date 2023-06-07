@@ -1,0 +1,322 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function doSomething(callback) {
+        callback();
+    }
+    function sayHi() {
+        console.log("Hi!");
+    }
+    doSomething(sayHi);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function doSomething(whatEverName) {
+        whatEverName();  //doesn't have to be called "callback"
+    }
+    function fname() {
+        console.log("Aidan");
+    }
+    doSomething(fname);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function judge(grade) {
+            switch (true) {
+                case grade == "A":
+                console.log("You got an", grade, ": Amazing!");
+                break;
+            
+                case grade == "B":
+                console.log("You got an", grade, ": Brilliant!");
+                break;
+
+                case grade == "C":
+                console.log("You got a", grade, ": Congrats!");
+                break;
+
+                case grade == "D":
+                console.log("You got a", grade, ": Definitely getting there!");
+                break;
+
+                default:
+                console.log("An", grade, ": For real?!");
+            }    
+        }
+
+        function getGrade(score, callback) {
+        let grade;
+                
+        switch (true) {
+                case score >= 90:
+                console.log(score);
+                grade = "A";
+                break;
+                
+                case score >= 80:
+                console.log(score);
+                grade = "B";
+                break;
+
+                case score >= 70:
+                console.log(score);
+                grade = "C";
+                break;
+
+                case score >= 60:
+                console.log(score);
+                grade = "D";
+                break;
+
+                default:
+                console.log(score);
+                grade = "F";
+        }
+
+        callback(grade);
+        }
+
+        getGrade(75, judge);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise = new Promise(function (resolve, reject) {
+            let x = 16;
+            if (x > 10) {
+                resolve(x);
+            } else {
+                reject("Too low");
+            }
+        });
+
+        promise.then(
+            function(value) {
+                console.log("Success:", value);
+            },
+            function(error) {
+                console.log("Error:", error);
+            }
+        );
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const promise = new Promise((resolve, reject) => {
+resolve("success!");
+})
+.then(value => {
+console.log(value);
+return "we";
+})
+.then(value => {
+console.log(value);
+return "can";
+})
+.then(value => {
+console.log(value);
+return "chain";
+})
+.then(value => {
+console.log(value);
+return "promises";
+})
+.then(value => {
+console.log(value);
+})
+.catch(value => {
+console.log(value);
+})
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const promise = new Promise((resolve, reject) => {
+reject("failed!");
+})
+.then(value => {
+console.log(value);
+return "we";
+})
+.then(value => {
+console.log(value);
+return "can";
+})
+.then(value => {
+console.log(value);
+return "chain";
+})
+.then(value => {
+console.log(value);
+return "promises";
+})
+.then(value => {
+console.log(value);
+})
+.catch(value => {
+console.log(value);
+})
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function saySomething(x) {
+return new Promise(resolve => {        //Promise only works  in an async function
+setTimeout(() => {
+resolve("something" + x);
+}, 2000);
+});
+}
+async function talk(x) {
+const words = await saySomething(x);
+console.log(words);
+}
+talk(2);
+talk(4);
+talk(8);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log("Hi there");
+setTimeout(() => console.log("Sorry I'm late"), 1000);
+console.log(add(4, 5));
+function add(x, y) {
+return x + y;
+}
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checker(val) {
+return new Promise((resolve, reject) => {
+if (val > 5) {
+resolve("Ready");
+} else {
+reject(new Error("Oh no"));
+}
+});
+}
+checker(5)
+.then((data) => {console.log(data); })
+.catch((err) => {console.error(err); })
+.finally(() =>{console.log("done")});
+    </script>
+</body>
+</html> -->
+
+<!-- Exercise 13.1 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <script src="Chapter 13.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 13.2 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <script src="Chapter 13.js"></script>
+    </body>
+</html> -->
+
+<!-- Exercise 13.3 -->
+<!-- <html>
+    <head></head>
+
+    <body>
+        <script src="Chapter 13.js"></script>
+    </body>
+</html> -->

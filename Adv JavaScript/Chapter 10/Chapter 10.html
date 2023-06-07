@@ -1,0 +1,817 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Let's find the treasure</h1>
+<div id="forest">
+    <div id="tree1">
+        <div id="squirrel"></div>
+        <div id="flower"></div>
+    </div>
+    <div id="tree2">
+        <div id="shrubbery">
+            <div id="treasure"></div>
+        </div>
+        <div id="mushroom">
+            <div id="bug"></div>
+        </div>
+    </div>
+</div>
+    <script>
+        console.dir(document.body);
+        
+        console.dir(document.body.children.forest.children.tree2.children.
+        shrubbery.children.treasure);
+        
+        console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].
+        childNodes[1]);
+        
+        console.dir(document.body.childNodes[3].childNodes[3].childNodes[1].
+        children.treasure);
+        
+        console.dir(document.body.children.forest.children.tree2.parentElement);
+        
+        console.dir(document.body.children.forest.children.tree2);
+        
+        console.dir(document.body.children.forest.children.tree2.previousElementSibling);
+        
+        console.dir(document.body.children.forest.children.tree1.nextElementSibling);
+    </script>
+</body>
+</html> -->
+ <!--Exercise 10.1-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div>
+        <ul >
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        </div>
+            <div>blue</div>
+            <div>green</div>
+            <div>yellow</div>
+            <div>Purple</div>
+    </div>
+    <script>
+        console.dir(document.body.children);
+        console.dir(document.body.children[0]);
+        console.dir(document.body.children[0].nextSibling);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome page</h1>
+<p id="greeting">
+Hi!
+</p>
+<script>
+    // document.body.children.greeting;
+    // document.body.children.greeting.innerText = "Bye!";
+    document.body.children.greeting.innerText = "<b>Bye!</b>";
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Just an example</h1>
+<div id="one" class="example">Hi!</div>
+<div id="two" class="example">Hi!</div>
+<div id="three" class="something">Hi!</div>
+<script>
+    console.log(document.getElementById("two"));
+</script>
+</body>
+</html> -->
+
+<!--Exercise 10.2-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "Greeting">Hello There!</h1>
+    <script>
+        console.log(document.getElementById("Greeting"));
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:pink;">Just an example</h1>
+<div id="one" class="example">Hi!</div>
+<div id="two" class="example">Hi!</div>
+<div id="three" class="something">Hi!</div>
+<script>
+// console.log(document.getElementById("two"));
+// console.log(document.getElementsByTagName("div").item(1));
+// console.log(document.getElementsByTagName("div").namedItem("one"));
+console.log(document.getElementsByTagName("h1"));
+</script>
+</body>
+</html> -->
+
+<!--Exercise 10.3-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:pink;">Just an example</h1>
+        <div id="one" class="example">Hi!</div>
+        <div id="two" class="example">Hi!</div>
+        <div id="three" class="something">Hi!</div>
+    <script>
+        console.log(document.getElementsByTagName("div"));
+        console.log(document.getElementsByTagName("div").namedItem("two"));
+    </script>
+</body>
+</html> -->
+
+<!--Exercise 10.4-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:pink;">Just an example</h1>
+        <div id="one" class="example">Hi!</div>
+        <div id="two" class="example">Hi!</div>
+        <div id="three" class="something">Hi!</div>
+    <script>
+        console.log(document.getElementsByClassName("example"));
+    </script>
+</body>
+</html> -->
+
+<!--Exercise 10.4-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "red"> Red </div>
+    <div class = "blue"> Blue </div>
+    <div class = "red"> Red 2 </div>
+
+<script>
+    const red = document.getElementsByClassName("red");
+    console.log(red);
+    redArray = Array;
+    Array.from(red).forEach(el => console.log(el));
+</script>
+</body>
+</html> -->
+
+<!--Exercise 10.5-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "chapter10">Header1</h1>
+    <p1 class = "chapter10">Para1</p1>
+    <h2 class = "chapter10">Header2</h2>
+    <p2 class = "chapter10">Para2</p2>
+
+    <script>
+        console.log(document.querySelector(".chapter10"));
+    </script>
+</body>
+</html> -->
+
+<!--Exercise 10.6-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "item">First</div>
+    <div class = "item">Second</div>
+    <div class = "item">Third</div>
+    <div class = "item">Fourth</div>
+
+    <script>
+        console.log(document.querySelectorAll(".item"));
+
+        const items = document.getElementsByClassName("item");
+        console.log(items);
+        itemsArray = Array;
+        Array.from(items).forEach(el => console.log(el));
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one" onclick="alert('Ouch! Stop it!')">Don't click here!
+    </div>
+<script>function stop(){
+    alert("Ouch! Stop it!");
+    }</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">Don't click here!</div>
+
+<script>
+document.getElementById("one").onclick = function () {
+alert("Auch! Stop!");
+};
+</script>    
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="reveal(this)">Click here!</button>
+
+<script>
+    function reveal(el){
+    console.log(el);
+    // console.log(el.innerText);
+}
+</script>
+</body>
+</html> -->
+
+<!--Exercise 10.7-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "button1" onclick="message(this)">Button1</button>
+    <button id = "button2" onclick="message(this)">Button2</button>
+
+    <script>
+        function message(el){
+        console.dir(el); 
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="magic">I might disappear and appear.</p>
+    <button onclick="toggleDisplay()">Magic!</button>
+
+<script>
+    function toggleDisplay(){
+        let p = document.getElementById("magic");
+        if(p.style.display === "none") {
+            p.style.display = "block";
+        } else {
+            p.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html> -->
+
+<!--Alternate to one above-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="magic">I might disappear and appear.</p>
+    <button onclick="toggleDisplay()">Magic!</button>
+
+<script>
+    function toggleDisplay(){
+        let p = document.getElementById("magic");
+        if(p.style.display === "block") {
+            p.style.display = "none";
+        } else {
+            p.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        }
+        </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="indigo"></div>
+    <div id="violet"></div>
+    <button onclick="rainbowify()">Make me a rainbow</button>
+
+<script>
+    function rainbowify(){
+    let divs = document.getElementsByTagName("div");
+        for(let i = 0; i < divs.length; i++) {
+            divs[i].style.backgroundColor = divs[i].id;
+        }
+    }
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.hide {
+        display: none;
+        }
+        .square {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        }
+        .square.blue {
+        background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="shape" class="square blue"></div>
+    <button onclick="disappear()">Disappear!</button>
+  
+  <script>
+    function disappear(){
+    document.getElementById("shape").classList.add("hide");
+    }
+  </script>  
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+height: 100px;
+width: 100px;
+background-color: yellow;
+}
+.square.blue {
+background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <div id="shape" class="square blue"></div>
+    <button onclick="change()">Change!</button>
+    
+<script>
+    function change(){
+    document.getElementById("shape").classList.remove("blue");
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide {
+display: none;
+}
+.square {
+height: 100px;
+width: 100px;
+background-color: yellow;
+}
+    </style>
+</head>
+<body>
+    <div id="shape" class="square"></div>
+    <button onclick="changeVisibility()">Magic!</button>
+
+<script>
+    function changeVisibility(){
+    document.getElementById("shape").classList.toggle("hide");
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+height: 100px;
+width: 100px;
+background-color: yellow;
+}
+.circle {
+border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <div id="shape" class="square"></div>
+    <button onclick="changeAttr()">Change attributes...</button>
+
+<script>
+    function changeAttr(){
+        let el = document.getElementById("shape");
+        el.setAttribute("style", "background-color:red;border:1px solid black");
+        el.setAttribute("id", "new");
+        el.setAttribute("class", "circle");
+    }
+</script>
+</body>
+</html> -->
+
+<!--Exercise 10.8-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #message {
+            position: relative;
+            float: left;
+        }
+
+        #output {
+            position: relative;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id = "message">Laurence</div>
+    <div id = "output">1</div>
+    <div id = "message">Mike</div>
+    <div id = "output">2</div>
+    <div id = "message">John</div>
+    <div id = "output">3</div>
+    <div id = "message">Larry</div>
+    <div id = "output">4</div>
+    <div id = "message">Kim</div>
+    <div id = "output">5</div>
+    <div id = "message">Joanne</div>
+    <div id = "output">6</div>
+    <div id = "message">Lisa</div>
+    <div id = "output">7</div>
+    <div id = "message">Janet</div>
+    <div id = "output">8</div>
+    <div id = "message">Jane</div>
+    <div id = "output">9</div>
+
+    <script></script>
+</body>
+</html> -->
+
+ <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <div id="square" style="width:100px;height:100px;background-color:grey;">Click for magic</div>
+
+//     <script>
+//         window.onload = function() {
+// document.getElementById("square").addEventListener("click",
+// changeColor);
+// }
+// function changeColor(){
+// let red = Math.floor(Math.random() * 256);
+// let green = Math.floor(Math.random() * 256);
+// let blue = Math.floor(Math.random() * 256);
+// this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+// }
+//     </script>
+// </body>
+// </html> -->
+
+<!--Exercise 10.9-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "text object"></div>
+
+    <button class = "button" onclick = "output(this)">Button 1</button>
+    <button class = "button" onclick = "output(this)">Button 2</button>
+    <button class = "button" onclick = "output(this)">Button 3</button>
+
+    <script>
+        // function output(el) {
+        // console.log(el);
+        // }
+        window.onload = function() {
+            document.getElementById("text object").addEventListener("click", output); {
+                function output() {
+                console.log(this);
+                }
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <button onclick="addRandomNumber()">Add a number</button>
+
+//     <script>
+//         function addRandomNumber(){
+//         let el = document.createElement("p");
+//         el.innerText = Math.floor(Math.random() * 100);
+//         document.body.appendChild(el);
+//         }
+//     </script>
+// </body>
+// </html> -->
+
+ <!--Exercise 10.10-->
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Complete JavaScript Course</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="message">Complete JavaScript Course</div>
+    <div>
+        <input type="text" id="addItem">
+        <input type="button" id="addNew" value="Add to List">
+    </div>
+    <div id="output">
+        <h1>Shopping List</h1>
+        <ol id="sList"> </ol>
+    </div>
+    <script>
+        document.getElementById("addNew").onclick = function () {
+                addOne();
+        }
+        function addOne() {
+            var a = document.getElementById("addItem").value;
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(a));
+            document.getElementById("sList").appendChild(li);
+        }
+    </script>
+</body>
+
+</html> -->
+
+ <!--Self-check-->
+ <!--1)-->
+ <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <div id="output">Complete JavaScript Course </div>
+
+// <script>
+//     var output = document.getElementById('output');
+//     output.innerText = "Hello <br> World";
+// </script>
+// </body>
+// </html> -->
+
+ <!--2)-->
+ <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <div id="output">Complete JavaScript Course </div>
+
+// <script>
+// document.getElementById('output').innerHTML = "Hello <br> World";
+// </script>
+// </body>
+// </html> -->
+
+ <!--3)-->
+ <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <div id="output">Hello World</div>
+// <input type="text" id="val" value="JavaScript">
+// <script>
+// document.getElementById('val').value = document.
+// getElementById('output').innerHTML;
+// </script>
+// </body>
+// </html> -->
+
+ <!--4)-->
+ <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <div class="holder">
+//         <div onclick="output('three')">Three
+//         <div onclick="output('two')">Two
+//         <div onclick="output('one')">One</div>
+//         </div>
+//         </div>
+//         </div>
+        
+//         <script>
+//         function
+//         output(val) {
+//         console.log(val);
+//         }
+//         </script>
+// </body>
+// </html> -->
+
+ <!--5)-->
+ <!-- <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+// </head>
+// <body>
+//     <div class="btn">Click Me</div>
+// <script>
+// const btn = document.querySelector(".btn");
+// btn.addEventListener("click", myFun);
+// function myFun() {
+// console.log("clicked");
+// }
+// </script>
+// </body>
+// </html> -->

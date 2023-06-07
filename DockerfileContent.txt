@@ -1,0 +1,17 @@
+*NEED THIS IN cmd FIRST*
+git clone https://github.com/docker/getting-started.git
+
+
+*IN Dockerfile IN /getting-started/app*
+FROM node:18-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+EXPOSE 3000
+
+*IN /getting-started/app cmd*
+docker build -t getting-started .
+
+*IN SAME DIRECTORY AS PREVIOUS*
+docker run -dp 3000:3000 getting-started

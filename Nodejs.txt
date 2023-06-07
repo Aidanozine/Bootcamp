@@ -1,0 +1,205 @@
+const mongoose = require("mongoose"),
+Subscriber = require("./models/subscriber");
+mongoose.connect(
+"mongodb://127.0.0.1:27017/recipe_db",
+{useNewUrlParser: true}
+);
+mongoose.Promise = global.Promise;
+
+
+Subscriber.create({
+name: "John",
+email: "john@mrjohn.com",
+zipCode: 54321
+})
+.then(result=>{
+console.log(result);
+})
+.catch(error=>{
+console.log(error);
+});
+
+
+Subscriber.create({
+name: "Ben",
+email: "ben@benmorrison.com",
+zipCode: 54321
+})
+.then(result=>{
+console.log(result);
+})
+.catch(error=>{
+console.log(error);
+});
+
+
+Subscriber.create({
+name: "Sara",
+email: "sara@sarajenning.com",
+zipCode: 54321
+})
+.then(result=>{
+console.log(result);
+})
+.catch(error=>{
+console.log(error);
+});
+
+
+Subscriber.create({
+name: "Wendy",
+email: "wendy@wendydarling.com",
+zipCode: 54321
+})
+.then(result=>{
+console.log(result);
+})
+.catch(error=>{
+console.log(error);
+});
+
+
+Subscriber.create({
+name: "Ralph",
+email: "ralph@wreckitralph.com",
+zipCode: 54321
+})
+.then(result=>{
+console.log(result);
+})
+.catch(error=>{
+console.log(error);
+});
+
+
+Subscriber.findOne({
+name: "Jon"
+}).then(result => {
+subscriber = result;
+console.log(subscriber.getInfo());
+})
+.catch(error=>{
+subscriber = error;
+console.log(subscriber.getInfo());
+});
+
+
+Subscriber.findOne({
+name: "John"
+}).then(result => {
+subscriber = result;
+console.log(subscriber.getInfo());
+})
+.catch(error=>{
+subscriber = error;
+console.log(subscriber.getInfo());
+});
+
+
+Subscriber.findOne({
+name: "John"
+})
+.then((result) => {
+subscriber = result;
+subscriber.findLocalSubscribers()
+.then((result) => {
+console.log(result);
+})
+})
+.catch((error)=>{
+subscriber = error;
+console.log(subscriber.getInfo());
+});
+
+
+const Course = require("./models/course");
+var testCourse, testSubscriber;
+Course.create( {
+title: "Tomato Land",
+description: "Locally farmed tomatoes only",
+zipCode: 12345,
+items: ["cherry", "heirloom"]
+})
+.then(course => testCourse = course);
+
+
+Subscriber.findOne({}).then(
+subscriber => testSubscriber = subscriber
+);
+testSubscriber.courses.push(testCourse._id);
+testSubscriber.save();
+Subscriber.populate(testSubscriber, "courses").then(subscriber =>
+console.log(subscriber)
+);
+
+
+Subscriber.find({courses: new mongoose.Types.ObjectId("645387a22c6367edf60518ad")})
+
+
+const mongoose = require("mongoose"),
+Subscriber = require("./models/subscriber"),
+Course = require("./models/course");
+var testCourse,
+testSubscriber;
+mongoose.connect(
+"mongodb://127.0.0.1:27017/recipe_db",
+{useNewUrlParser: true}
+);
+mongoose.Promise = global.Promise;
+Subscriber.deleteMany({})
+.then((items) => console.log(`Removed ${items.n} records!`))
+.then(() => {
+return Course.deleteMany({});
+})
+.then((items) => console.log(`Removed ${items.n} records!`))
+.then(() => {
+return Subscriber.create( {
+name: "Jon",
+email: "jon@jonwexler.com",
+zipCode: "12345"
+});
+})
+.then(subscriber => {
+console.log(`Created Subscriber: ${subscriber.getInfo()}`);
+})
+.then(() => {
+return Subscriber.findOne( {
+name: "Jon"
+});
+})
+.then(subscriber => {
+testSubscriber = subscriber;
+console.log(`Found one subscriber: ${subscriber.getInfo()}`);
+})
+.then(() => {
+return Course.create({
+title: "Tomato Land",
+description: "Locally farmed tomatoes only",
+zipCode: 12345,
+items: ["cherry", "heirloom"]
+});
+})
+.then(course => {
+testCourse = course;
+console.log(`Created course: ${course.title}`);
+})
+.then(() => {
+testSubscriber.courses.push(testCourse);
+testSubscriber.save();
+})
+.then( () => {
+return Subscriber.populate(testSubscriber, "courses");
+})
+.then(subscriber => console.log(subscriber))
+.then(() => {
+return Subscriber.find({ courses: new mongoose.Types.ObjectId(testCourse._id) });
+})
+.then(subscriber => console.log(subscriber))
+.catch(error=>console.log(error));
+
+
+var targetSubscriber;
+Subscriber.findOne({
+email: testUser.email
+})
+.then(subscriber => targetSubscriber = subscriber);

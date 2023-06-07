@@ -1,0 +1,104 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="output">Hello World</h1>
+<div class="output">Test</div>
+
+    <script src="Chapter 09.js"></script>
+</body>
+</html>-->
+<!--Exercise 9.3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="output">Test</div>
+    <script>
+        const ch9 = document.querySelector(".output");
+        ch9.textContent = "Hello!";
+        ch9.classList.add("red");
+        ch9.id = "tester";
+        ch9.style.backgroundColor = "red";
+        const url = document.URL;
+        ch9.textContent = url;
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="output">Hello World</h1>
+<div class="output">
+    <h1>Hello</h1>
+<div>Test</div>
+<ul>
+<li id="one">One</li>
+<li class="red">Two</li>
+</ul>
+<div>Test</div>
+</div>
+
+    <script> //Chapter project
+        const op = document.querySelector(".output");
+        const mainList = document.querySelector("ul");
+        mainList.id = "mainList";
+        const divTags = document.querySelectorAll("div");
+        console.log(divTags);
+        for(var i = 0; i < divTags.length; i++) {
+            divTags[i].id = "id" + (i+1);
+            if (i%2) {
+                divTags[i].style.color = "red"
+            } else {
+                divTags[i].style.color = "blue"
+            }
+        }
+// Self-check quiz
+//document.body.textContent = "Hello!";
+
+// for (const property in document) {
+// console.log(`${property}: ${document[property]}`);
+// }
+
+// for (const property in window) {
+// console.log(`${property}: ${document[window]}`);
+// }
+
+
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hi class = "selfCheck05"></hi>
+    <script>
+        const slfChk = document.querySelector(".selfCheck05");
+        slfChk.textContent = "Hello World";
+    </script>
+</body>
+</html> -->

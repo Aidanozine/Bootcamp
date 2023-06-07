@@ -1,0 +1,7 @@
+lesson 17- make subscribers button
+
+lesson 20_ show if a user is subscribed
+
+Create Read Update Delete - CRUD
+
+databases need CRUD to operate.

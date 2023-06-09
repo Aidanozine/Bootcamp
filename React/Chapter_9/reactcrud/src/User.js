@@ -1,0 +1,201 @@
+// import React, { Component } from "react";
+// import firebase from "firebase/compat/app";
+// import "firebase/compat/auth";
+// import "firebase/compat/firestore";
+// import { Table, Button, Nav } from "react-bootstrap";
+
+// class User extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       users: [],
+//       showDeleteDialog: false,
+//       selectedUser: {},
+//     };
+//     // this.add = this.add.bind(this);
+//   }
+
+//   //   add(e) {
+//   //     this.props.history.push("/add");
+//   //     }
+
+//   componentDidMount() {
+//     firebase
+//       .database()
+//       .ref("/")
+//       .on("value", (snapshot) => {
+//         let returnArr = [];
+//         snapshot.forEach((data) => {
+//           var user = data.val();
+//           user["key"] = data.key;
+//           returnArr.push(user);
+//         });
+//         this.setState({
+//           users: returnArr,
+//         });
+//       });
+//   }
+//   render() {
+//     const listUsers = this.state.users.map((user) => (
+//       <tr key={user.key}>
+//         <td>{user.username}</td>
+//         <td>{user.email}</td>
+//         <td>Edit</td>
+//         <td>
+//           <Button onClick={this.openDeleteDialog.bind(this, user)}>
+//             Remove
+//           </Button>
+//         </td>
+//       </tr>
+//     ));
+
+//     return (
+//       <div>
+//         <Nav.Link href="/add">
+//           <Button variant="primary">Add</Button>
+//         </Nav.Link>
+//         <Table striped bordered hover>
+//           <thead>
+//             <tr>
+//               <th>Username</th>
+//               <th>Email</th>
+//               <th>Edit</th>
+//               <th>Delete</th>
+//             </tr>
+//           </thead>
+//           <tbody>{listUsers}</tbody>
+//         </Table>
+//       </div>
+//     );
+//   }
+// }
+
+// export default User;
+
+import React, { Component } from "react";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+import { Table, Button, Modal, Nav } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+
+class User extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      users: [],
+      showDeleteDialog: false,
+      selectedUser: {},
+    };
+    // this.add = this.add.bind(this);
+    this.closeDeleteDialog = this.closeDeleteDialog.bind(this);
+    this.delete = this.delete.bind(this);
+  }
+
+  //   add(e) {
+  //     this.props.history.push("/add");
+  //     }
+
+  componentDidMount() {
+    firebase
+      .database()
+      .ref("/")
+      .on("value", (snapshot) => {
+        let returnArr = [];
+        snapshot.forEach((data) => {
+          var user = data.val();
+          user["key"] = data.key;
+          returnArr.push(user);
+        });
+        this.setState({
+          users: returnArr,
+        });
+      });
+  }
+
+  openDeleteDialog(user) {
+    this.setState({
+      showDeleteDialog: true,
+      selectedUser: user,
+    });
+  }
+
+  closeDeleteDialog() {
+    this.setState({
+      showDeleteDialog: false,
+      selectedUser: {},
+    });
+  }
+
+  delete(e) {
+    firebase
+      .database()
+      .ref("/" + this.state.selectedUser.key)
+      .remove()
+      .then((x) => {
+        alert("And they were never seen again....DUH DUH DUH");
+        this.closeDeleteDialog();
+      })
+      .catch((error) => {
+        alert("Sorry Boss. They got away.");
+        console.log("ERROR", error);
+      });
+  }
+
+  render() {
+    const listUsers = this.state.users.map((user) => (
+      <tr key={user.key}>
+        <td>{user.username}</td>
+        <td>{user.email}</td>
+        <td>
+          <Link to={`/edit/${user.key}`}>Edit</Link>
+        </td>
+        <td>
+          <Button onClick={this.openDeleteDialog.bind(this, user)}>
+            Remove
+          </Button>
+        </td>
+      </tr>
+    ));
+
+    return (
+      <div>
+        <Nav.Link href="/add">
+          <Button variant="primary">Add</Button>
+        </Nav.Link>
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>{listUsers}</tbody>
+        </Table>
+        <Modal
+          show={this.state.showDeleteDialog}
+          onHide={this.closeDeleteDialog}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>Delete User</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>
+              What do you want to do with {this.state.selectedUser.username}{" "}
+              Boss?
+            </p>
+            <hr />
+          </Modal.Body>
+          <Modal.Footer>
+            <Button onClick={this.delete}>Make 'em disappear</Button>
+            <Button onClick={this.closeDeleteDialog}>Leave 'em be</Button>
+          </Modal.Footer>
+        </Modal>
+      </div>
+    );
+  }
+}
+
+export default User;

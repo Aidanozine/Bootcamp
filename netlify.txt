@@ -1,0 +1,3 @@
+Inside folder of specific project
+
+npm run build

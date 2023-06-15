@@ -16,7 +16,7 @@ function Items({data}){
           })
         }
 
-</div>
+        </div>
     )
 }
 

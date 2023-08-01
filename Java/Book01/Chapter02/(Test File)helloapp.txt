@@ -1,6 +1,8 @@
 Hello, World!
 Hello, World!
 
+cmd:
+
 java HelloApp > helloapp.txt
 creates txt file and prints contents NB will reset to one print if more exist
 

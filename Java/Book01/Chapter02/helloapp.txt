@@ -1,0 +1,8 @@
+Hello, World!
+Hello, World!
+
+java HelloApp > helloapp.txt
+creates txt file and prints contents NB will reset to one print if more exist
+
+java HelloApp >> helloapp.txt
+creates txt file and/or appends printed content

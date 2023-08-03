@@ -8,7 +8,7 @@ public class LaunchControl {
             if (count == 8) {
                 System.out.println("Ignition sequence start!");
             } else {
-                System.out.println(count + " ");
+                System.out.println(count + "...");
             }
             try {
                 Thread.sleep(1000);

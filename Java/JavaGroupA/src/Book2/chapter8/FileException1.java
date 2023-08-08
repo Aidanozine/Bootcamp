@@ -9,7 +9,7 @@ public class FileException1 {
         try {
             FileInputStream f = new FileInputStream(name);
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("file not found");
         }
     }
 }

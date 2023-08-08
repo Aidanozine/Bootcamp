@@ -6,7 +6,7 @@ public class FileException2 {
         try {
             openFile("c:/test.txt");
         } catch (Exception error) {
-            System.out.println(error);
+            System.out.println("file not found");
         }
     }
 

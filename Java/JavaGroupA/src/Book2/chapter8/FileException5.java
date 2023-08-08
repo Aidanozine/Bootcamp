@@ -10,12 +10,12 @@ public class FileException5 {
         try{
             FileInputStream f = new FileInputStream(name);
         } catch (FileNotFoundException e) {
-        System.out.println(e);
+        System.out.println("file not found");
     }
 //        try {
 //            FileInputStream f = new FileInputStream(name);
 //        } catch (Exception e) {
-//            System.out.println(e);
+//            System.out.println("file not found");
 //        }
     }
 }

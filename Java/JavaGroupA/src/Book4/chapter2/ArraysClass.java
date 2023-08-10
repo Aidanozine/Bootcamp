@@ -1,8 +1,8 @@
-package Book4.chapter1;
+package Book4.chapter2;
 
 import java.util.Scanner;
 
-public class Arrays {
+public class ArraysClass {
 //    String[] names = new String[10]; //same as below
 //    String names [] = new String[10]; //same as above
     static Scanner sc = new Scanner(System.in);

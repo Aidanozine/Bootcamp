@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Book01/Book01.iml" filepath="$PROJECT_DIR$/Book01/Book01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaGroupA/JavaGroupA.iml" filepath="$PROJECT_DIR$/JavaGroupA/JavaGroupA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_2/Lesson_2.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_2/Lesson_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_3/Lesson_3.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_3/Lesson_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_4/Lesson_4.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_4/Lesson_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_5/Lesson_5.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_5/Lesson_5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_6/Lesson_6.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_6/Lesson_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_7/Lesson_7.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_7/Lesson_7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/Lesson_8/Lesson_8.iml" filepath="$PROJECT_DIR$/Exercises/Lesson_8/Lesson_8.iml" />
+    </modules>
+  </component>
+</project>

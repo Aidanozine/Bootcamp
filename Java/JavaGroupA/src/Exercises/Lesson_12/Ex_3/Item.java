@@ -5,15 +5,13 @@ public class Item {
     private String desc;
     private double price;
     static int nextId = 1;
-    
-    // Default constructor sets default values
+
     public Item(){
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);
     }
-    
-    // Overloaded constructor takes description and price
+
     public Item(String desc, double price) {
         setId();
         setDesc(desc);
@@ -26,7 +24,6 @@ public class Item {
         System.out.println("\tPrice: "+getPrice());
     }
 
-    // Getter and Setter methods
     private void setId() {
         id = Item.nextId++;
     }

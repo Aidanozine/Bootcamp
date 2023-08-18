@@ -23,7 +23,6 @@ public class Order {
         return Double.toString(discount) + "%";
     }
 
-    // Code the calcDiscount method.
     public void calcDiscount() {
         if (custType == NONPROFIT){
             if (total > 900){

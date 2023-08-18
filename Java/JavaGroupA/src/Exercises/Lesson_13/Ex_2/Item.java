@@ -6,16 +6,14 @@ public class Item {
     private double price;
     private char colorCode;
     static int nextId = 1;
-    
-    // Default constructor sets default values
+
     public Item(){
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);
         setColorCode('U');
     }
-    
-    // Overloaded constructor takes description and price
+
     public Item(String desc, double price, char cCode) {
         setId();
         setDesc(desc);
@@ -30,7 +28,6 @@ public class Item {
         System.out.println("\tColor: "+getColorCode());
     }
 
-    // Getter and Setter methods
     private void setId() {
         id = Item.nextId++;
     }

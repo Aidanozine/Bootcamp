@@ -7,7 +7,6 @@ public class Item {
     static int nextId = 1;
     
     public Item(){
-    // set default values
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);

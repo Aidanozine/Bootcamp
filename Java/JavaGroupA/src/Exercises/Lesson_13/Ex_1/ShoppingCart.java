@@ -5,7 +5,7 @@ import java.util.*;
 public class ShoppingCart {
     public static void main(String[] args){
         
-            String[] days = {"monday","saturday","tuesday","sunday","friday"};
+            String[] days = {"monday","tuesday","wednesday","thursday","friday","saturday","sunday"};
             
             ArrayList<String> dayList = new ArrayList(Arrays.asList(days));
             for (String s : dayList){

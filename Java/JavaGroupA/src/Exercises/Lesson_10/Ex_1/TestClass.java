@@ -4,7 +4,7 @@ package Exercises.Lesson_10.Ex_1;
 
 public class TestClass {
     public static void main (String args[]){
-        int x = 4, y = 9;
+        int x = 4, y = 8;
         if (y / x < 3) {
             x += y;
         } else {

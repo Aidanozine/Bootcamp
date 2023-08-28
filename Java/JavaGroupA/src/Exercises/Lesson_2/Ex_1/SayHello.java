@@ -1,4 +1,4 @@
-package Exercises.Lesson_3.Ex_1;
+package Exercises.Lesson_2.Ex_1;
 
 public class SayHello {
 

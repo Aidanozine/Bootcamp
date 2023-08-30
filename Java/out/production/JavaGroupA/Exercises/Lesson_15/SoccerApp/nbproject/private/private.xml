@@ -3,9 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/event/GainPossession.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/util/PlayerDatabase.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/League.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/event/GameEvent.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/Game.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/Team.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/util/PlayerDatabaseException.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/GameResult.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/event/Shoot.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/IDisplayDataItem.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/Player.java</file>
             <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/play/DisplayString.java</file>
             <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/event/Dribble.java</file>
+            <file>file:/C:/Users/desmo/Desktop/Bootcamp/Java/JavaGroupA/src/Exercises/Lesson_15/SoccerApp/src/soccer/util/Settings.java</file>
         </group>
     </open-files>
 </project-private>

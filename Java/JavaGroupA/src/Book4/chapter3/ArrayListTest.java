@@ -78,10 +78,10 @@ public class ArrayListTest implements Iterable {
         Employee emp2 = new Employee("Tisdale", "Ashley");
         Employee emp3 = new Employee("Johnson", "Dwayne");
 
-//        emps.add(emp1);
-//        emps.add(emp2);
-//        emps.add(emp3);
-//        System.out.println("After adding: " + emps);
+        emps.add(emp1);
+        emps.add(emp2);
+        emps.add(emp3);
+        System.out.println("After adding: " + emps);
 //        emps.remove(emp3);
 //        System.out.println("After deleting: " + emps);
 
@@ -89,7 +89,7 @@ public class ArrayListTest implements Iterable {
         emps2.add(emp1);
         emps2.add(emp2);
         emps.removeAll(emps2);
-        System.out.println("Removes all: " + emps);
+        System.out.println("Removes all but: " + emps);
 //        emps.retainAll(emps2);
 //        System.out.println("Retains all: " + emps);
     }

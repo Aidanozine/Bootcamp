@@ -52,7 +52,7 @@ public class AddSubtract3 extends Application {
         Scene scene = new Scene(pane, 200, 75);
 
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Fun With Add & Subtract!");
+        primaryStage.setTitle("Add/Sub");
         primaryStage.show();
     }
 }

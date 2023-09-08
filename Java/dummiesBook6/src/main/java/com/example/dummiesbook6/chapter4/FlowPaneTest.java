@@ -29,10 +29,10 @@ public class FlowPaneTest extends Application {
         b4 = new Button("Fourth");
         b4.setMinWidth(Double.MIN_VALUE);
 
-//        FlowPane flowPane = new FlowPane(Orientation.HORIZONTAL, 10, 10, b1, b2, b3, b4);
-//        flowPane.setPrefWrapLength(300);
-        FlowPane flowPane = new FlowPane(Orientation.VERTICAL, 10, 10, b1, b2, b3, b4);
+        FlowPane flowPane = new FlowPane(Orientation.HORIZONTAL, 10, 10, b1, b2, b3, b4);
         flowPane.setPrefWrapLength(300);
+//        FlowPane flowPane = new FlowPane(Orientation.VERTICAL, 10, 10, b1, b2, b3, b4);
+//        flowPane.setPrefWrapLength(300);
 
         Scene scene = new Scene(flowPane, 350, 350);
 

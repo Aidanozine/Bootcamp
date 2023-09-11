@@ -148,8 +148,8 @@ public class PizzaOrder extends Application {
     private void btnOK_Click(){
         String msg = "Customer:\n\n";
         msg += "\t" + txtName.getText() + "\n";
-        msg += "\t" + txtPhone.getText() + "\n\n";
-        msg += "\t" + txtAddress.getText() + "\n";
+        msg += "\t" + txtPhone.getText() + "\n";
+        msg += "\t" + txtAddress.getText() + "\n\n";
         msg += "You ordered a ";
 
         if (rdoSmall.isSelected()){

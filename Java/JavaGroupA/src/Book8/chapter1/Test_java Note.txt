@@ -1,0 +1,3 @@
+Comment out package in IntelliJ
+then "javac Test.java"
+then "java Test \\whatever arguments you want to run\\"

@@ -11,7 +11,7 @@ public class FileTest {
 //            System.out.println("File not found!");
 //        }
 
-//        File file = new File("C:\\Users\\desmo\\Desktop\\Bootcamp\\Java\\JavaGroupA\\src\\Book8\\hits.log");
+//        File file = new File("C:\\Users\\desmo\\Desktop\\Bootcamp\\Java\\JavaGroupA\\src\\Book8\\chapter1\\hits.log");
 //        try {
 //            if (file.createNewFile()) {
 //                System.out.println("File created");

@@ -1,0 +1,23 @@
+1)E x D,E
+2)C,E x C,D,E
+3)A,D,E x A,E
+4)D,E x B,E,G // "." is not allowed
+5)B,E x A,D,F // "=null" is eligible for System.gc()
+6)G x F
+7)A,B,C,E x C,E
+8)B,H x B,D,E,H
+9)C,F x E // local variables don't default
+10) x A,E,F
+11)C x E
+12)A,G,H x A,C,D
+13)B,E x A,B,C
+14)A,B,D,E <correct>
+15)A,B,F,G x C,E
+16)E x A,D
+17) x D,F,G
+18)C,D x B,C,F
+19)C,D,E x A,D
+20) x C
+21) x D
+22) x C,F,G
+23) x 

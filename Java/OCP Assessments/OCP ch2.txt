@@ -1,0 +1,21 @@
+1) A D + G
+2) A B D
+3) B D + C
+4) B
+5) A F x A C
+6) E x F
+7) D
+8) E x A
+9) A D E
+10) C F x G
+11) D
+12) D
+13) F
+14) B E G
+15) B D x D
+16) B
+17) C F
+18) C
+19) B F
+20) D x A D E
+21) E

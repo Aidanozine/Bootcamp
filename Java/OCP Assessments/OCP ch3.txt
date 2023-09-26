@@ -1,0 +1,29 @@
+1) A B D E G H x A B C E F G
+2) C x B
+3) B C E H x A D F H
+4) C x F
+5) B x E
+6) C D E
+7) A x D
+8) C x G
+9) D x B C E
+10) H x E
+11) A
+12) A x C
+13) D x G
+14) B C F x B D F
+15) A x F
+16) F x A B D
+17) x B D E
+18) C D E x C E
+19) E
+20) B x A E
+21) C x E
+22) E
+23) B x F
+24) x G
+25) B x D
+26) x F
+27) E x F
+28) C x F
+29) D x C

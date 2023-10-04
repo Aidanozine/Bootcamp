@@ -2,19 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package OCP.chapter5;
+package OCP.chapter10;
+
+import java.util.List;
 
 /**
  *
  * @author desmo
  */
-public class zooPen {
-    private static final int NUM_BUCKETS = 45;
-    
+public class TerminalStreamOperations {
     public static void main(String[] args) {
-//        try{
-//        NUM_BUCKETS = 5;
-//        } catch(Exception e){
-//            System.out.println("Can't change final variable: " + e);}
+        List numbers = List.of(3, 6, 9, 12, 15);
+        long count = numbers.stream().count();
+        System.out.println("Number of elements: " + count);
     }
 }

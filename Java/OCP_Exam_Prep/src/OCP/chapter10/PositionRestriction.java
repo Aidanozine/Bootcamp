@@ -2,19 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package OCP.chapter5;
+package OCP.chapter10;
+
+import java.util.stream.Stream;
 
 /**
  *
  * @author desmo
  */
-public class zooPen {
-    private static final int NUM_BUCKETS = 45;
-    
+public class PositionRestriction {
     public static void main(String[] args) {
-//        try{
-//        NUM_BUCKETS = 5;
-//        } catch(Exception e){
-//            System.out.println("Can't change final variable: " + e);}
+        Stream<Integer> s = Stream.iterate(0, n -> n + 1);
+        s.skip(1).limit(4).forEach(System.out::println);
     }
 }

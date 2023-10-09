@@ -48,6 +48,7 @@ public class InfinitelyFrozen {
 //---------------------------------------------------------
         List<String> helper = Stream.of("goldfish", "finch")
                 .filter(s-> s.length() > 5)
+                /*.peek(System.out::println*/
                 .collect(Collectors.toList());
         long count = helper.stream()
                 .count();

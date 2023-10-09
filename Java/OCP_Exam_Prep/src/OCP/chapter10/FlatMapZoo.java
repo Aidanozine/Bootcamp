@@ -20,10 +20,18 @@ public class FlatMapZoo {
 //        Stream<List<String>> animals = Stream.of(zero, one, two);
 //        
 //        animals.flatMap(m -> m.stream()).forEach(System.out::println);
-
-        var zero = Stream.of();
+//-----------------------------------------------------------------
+//        var zero = Stream.of();
+//        var one = Stream.of("bonobo");
+//        var two = Stream.of("Mamma Gorilla", "Baby Gorilla");
+//        Stream.concat(one, two).forEach(System.out::println);
+//-----------------------------------------------------------------
+        var zero = Stream.of("zero");
         var one = Stream.of("bonobo");
         var two = Stream.of("Mamma Gorilla", "Baby Gorilla");
-        Stream.concat(one, two).forEach(System.out::println);
+//        Stream.concat(one, two).forEach(System.out::println);
+        Stream<?> s = Stream.concat(one, two);
+        Stream<?> s2 = Stream.concat(s, zero);
+        s2.forEach(System.out::println);
     }
 }

@@ -10,9 +10,12 @@ import java.util.stream.Stream;
  *
  * @author desmo
  */
-public class PositionRestriction {
+public class PrimitiveStreamTest {
     public static void main(String[] args) {
-        Stream<Integer> s = Stream.iterate(2, n -> n + 2);
-        s.skip(1).limit(4).forEach(System.out::println);
+        Stream<Integer> stream = Stream.of(1,2,3);
+        System.out.println(stream.reduce(0, (s,n) -> s + n));
+        //Variant of above
+        Stream<Integer> stream2 = Stream.of(1,2,3);
+        System.out.println(stream2.mapToInt(x -> x).sum());
     }
 }

@@ -16,12 +16,12 @@ public class CollectingTest {
 
     public static void main(String[] args) {
         Stream<String> wolf = Stream.of("w", "o", "l", "f");
-//        StringBuilder sb = wolf.collect(
-//                StringBuilder::new,
-//                StringBuilder::append, //accumulator
-//                StringBuilder::append //combiner
-//        );
-//        System.out.println(sb);
+        StringBuilder sb = wolf.collect(
+                StringBuilder::new,
+                StringBuilder::append, //accumulator
+                StringBuilder::append //combiner
+        );
+        System.out.println(sb);
 
 //        TreeSet<String> tree = wolf.collect(
 //                TreeSet::new,
@@ -30,8 +30,8 @@ public class CollectingTest {
 //        );
 //        System.out.println(tree);
 
-        TreeSet<String> tree = wolf.collect(Collectors.toCollection(TreeSet::new));
-        System.out.println(tree); 
+//        TreeSet<String> tree = wolf.collect(Collectors.toCollection(TreeSet::new));
+//        System.out.println(tree); 
     }
 
     private static class StringBulder {

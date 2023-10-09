@@ -21,12 +21,16 @@ public class ReductionTest {
         System.out.println(result);
         
         Stream<String> stream = Stream.of("b","i","g"," ","d","o","g");
-//        String word = stream.reduce("",(s,c) -> s + c);
+        String word = stream.reduce("",(s,c) -> s + c);
+        System.out.println("Reduction with a stream:");
+        System.out.println(word);
+        
+//        String word = stream.reduce("",(s,c) -> c + s);
 //        System.out.println("Reduction with a stream:");
 //        System.out.println(word);
         
-        String word = stream.reduce("2",(s,c) -> s + c); //c: array element (searcher) s: result aka "the accumulator"
-        System.out.println("Reduction with a stream:");
-        System.out.println(word);
+//        String word = stream.reduce("2",(s,c) -> s + c); //c: array element (searcher) s: result aka "the accumulator"
+//        System.out.println("Reduction with a stream:");
+//        System.out.println(word);
     }
 }

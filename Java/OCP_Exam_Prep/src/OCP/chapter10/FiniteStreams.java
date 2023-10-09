@@ -27,8 +27,11 @@ public class FiniteStreams {
         System.out.println("fromArray");
         Stream<Integer> fromArray = Stream.of(1, 2, 3); // count = 3
         fromArray.forEach(n -> System.out.println(n));
-        System.out.println("streamA");
-        Stream<Integer> streamA = Stream.iterate(1, n -> n < 10, n -> n + 2);
-        streamA.forEach(n -> System.out.println(n));
+//        System.out.println("Random Stream");
+//        Stream<Double> randoms = Stream.generate(Math::random);
+//        randoms.forEach(System.out::print); //infinite
+        System.out.println("Even Number Stream");
+        Stream<Integer> streamA = Stream.iterate(0, n -> n < 100, n -> n + 2);
+        streamA.forEach(n -> System.out.print(n));
     }
 }

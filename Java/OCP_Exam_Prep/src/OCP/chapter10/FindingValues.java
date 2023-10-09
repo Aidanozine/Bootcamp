@@ -10,9 +10,13 @@ import java.util.stream.Stream;
  *
  * @author desmo
  */
-public class PositionRestriction {
+public class FindingValues {
+
     public static void main(String[] args) {
-        Stream<Integer> s = Stream.iterate(2, n -> n + 2);
-        s.skip(1).limit(4).forEach(System.out::println);
+        Stream<String> s = Stream.of("monkey", "gorilla", "bonobo");
+        s.findAny().ifPresent(System.out::println); // monkey (usually)
+        
+        Stream<String> infinite = Stream.generate(()-> "chimp");
+        infinite.findAny().ifPresent(System.out::println); // chimp
     }
 }

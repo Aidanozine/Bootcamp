@@ -15,5 +15,9 @@ public class MultipleReductions {
         Stream<String> lupus = Stream.of("aw","o","l","f");
         int length = lupus.reduce(0, (i, s) -> i + s.length(), (a, b) -> a + b);
         System.out.println("String Length: " + length);
+        
+        Stream<Integer> numbers = Stream.of(2,4,6,8);
+        int ans = numbers.reduce(1, (i, s) -> i * s);
+        System.out.println(ans);
     }
 }

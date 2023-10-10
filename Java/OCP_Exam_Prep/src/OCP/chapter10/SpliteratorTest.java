@@ -56,6 +56,6 @@ public class SpliteratorTest {
         Map<Integer, String> mapOfOz = ohMy.collect(Collectors
                 .toMap(String::length, k -> k, (s1, s2) -> s1 + ", " + s2));
         System.out.println(mapOfOz);
-        System.out.println(mapOfOz.getClass()); //bottom pg574 ->Grouping
+        System.out.println(mapOfOz.getClass());
     }
 }

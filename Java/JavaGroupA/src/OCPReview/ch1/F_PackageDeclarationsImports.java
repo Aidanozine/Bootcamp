@@ -1,0 +1,20 @@
+package OCPReview.ch1;
+
+import java.util.Random;
+
+// Wildcards:
+// Does not actually everything, only imports the classes directly under the package.
+// import java.util.*;
+// import java.util.concurrent.*;
+// import .util.concurrent.atomic.*;
+
+public class F_PackageDeclarationsImports {
+}
+
+class NumberPicker {
+    public static void main(String[] args) {
+        // We need the import for it to work
+        Random r = new Random();
+        System.out.println(r.nextInt(10));
+    }
+}

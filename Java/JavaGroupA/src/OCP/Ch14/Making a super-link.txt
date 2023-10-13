@@ -1,0 +1,10 @@
+1)Get to C:
+
+2)Go into Windows
+
+3)Go into System32
+
+4)cmd from there
+
+C:\Windows\System32>mklink "desired path\file name" "Path of existing file to be linked"
+You do not have sufficient privilege to perform this operation.

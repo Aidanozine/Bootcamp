@@ -1,4 +1,4 @@
-package zoo.animal.talks.media;
+package OCP.OCP_Ch12.talks.zoo.animal.talks.media;
 
 public class Announcement {
 

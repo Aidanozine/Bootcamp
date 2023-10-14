@@ -1,4 +1,4 @@
-package zoo.animal.talks.content;
+package OCP.OCP_Ch12.talks.zoo.animal.talks.content;
 
 public class ElephantScript {
 }

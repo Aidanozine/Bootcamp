@@ -5,5 +5,10 @@
     <file url="file://$PROJECT_DIR$/src/OCP/Ch11/Bundles/Zoo_en_CA.properties" />
     <file url="file://$PROJECT_DIR$/src/OCP/Ch11/Bundles/Zoo_en_US.properties" />
     <file url="file://$PROJECT_DIR$/src/OCP/Ch11/Bundles/Zoo_fr.properties" />
+    <file url="file://$PROJECT_DIR$/src/OCPReview/ch11/bundles/Zoo.properties" />
+    <file url="file://$PROJECT_DIR$/src/OCPReview/ch11/bundles/Zoo_en.properties" />
+    <file url="file://$PROJECT_DIR$/src/OCPReview/ch11/bundles/Zoo_en_CA.properties" />
+    <file url="file://$PROJECT_DIR$/src/OCPReview/ch11/bundles/Zoo_en_US.properties" />
+    <file url="file://$PROJECT_DIR$/src/OCPReview/ch11/bundles/Zoo_fr.properties" />
   </component>
 </project>

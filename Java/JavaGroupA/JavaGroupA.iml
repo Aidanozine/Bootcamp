@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/OCP/Ch11/Bundles" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/OCPReview/ch11/bundles" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ExercisesAdvJava/Lesson_19/Bundles" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -27,5 +28,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="MessagesBundle" level="project" />
   </component>
 </module>

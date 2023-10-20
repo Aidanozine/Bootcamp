@@ -16,10 +16,10 @@ public class P04NioReadAll {
         try{
             fileArr = Files.readAllLines(file);
 
-            System.out.println("\n=== Lord Count ===");
+            System.out.println("\n=== Country ===");
             long wordCount = fileArr.stream()
                     .flatMap(line -> Stream.of(line.split(" ")))
-                    .filter(word -> word.contains("lord"))
+                    .filter(word -> word.contains("Country"))
                     .peek(word -> System.out.println(word))
                     .count();
             System.out.println("Word count: " + wordCount);

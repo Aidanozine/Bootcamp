@@ -21,9 +21,9 @@ public class P03NioReadAll {
                     .filter(line -> line.contains("United"))
                     .forEach(line -> System.out.println(line));
 
-            System.out.println("\n=== America ===");
+            System.out.println("\n=== Independent ===");
             fileArr.stream()
-                    .filter(line -> line.contains("America"))
+                    .filter(line -> line.contains("Independent"))
                     .forEach(line -> System.out.println(line));
 
 

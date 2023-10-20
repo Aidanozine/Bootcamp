@@ -12,9 +12,9 @@ public class SimpleJDBCExample {
     public static void main(String[] args) {
         // Create the "url"
         // assume database server is running on the localhost
-        String url = "jdbc:derby://localhost:1527/EmployeeDB";
-        String username = "tiger";
-        String password = "scott";
+        String url = "jdbc:mysql://localhost:3306/movies";
+        String username = "root";
+        String password = "password";
 
         // Create a simple query
         String query = "SELECT * FROM Employee";

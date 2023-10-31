@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698151314529_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698151314574_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698151393146_3" label="taco-cloud-parent" name="taco-cloud-parent">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-jdbctemplate" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-sd-jpa" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-sd-jdbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-sd-cassandra" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-sd-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-sfc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-api" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-data" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-domain" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-restclient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-security" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-ui" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/auth-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-admin" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-kitchen" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-jms" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-kafka" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-rabbitmq" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/reactor-fun" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/hello-reactive" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-cassandra-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-email" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-noop" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-mongodb-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-api-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-data-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-domain-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-email-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-kitchen-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-jms-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-kafka-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-rabbitmq-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-noop-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-restclient-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-security-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-web-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-ui-mongodb" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/taco-cloud-r2dbc-parent" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-api-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-data-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-domain-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-email-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-kitchen-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-jms-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-kafka-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-rabbitmq-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-messaging-noop-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-restclient-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-security-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-web-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-ui-r2dbc" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-channel-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-channel-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-fireandforget-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-fireandforget-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-reqres-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-reqres-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-reqres-client-ws" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-reqres-server-ws" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-reqstream-client" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/rsocket-reqstream-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/admin-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/tacocloud-jmx" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698151320405_2" label="Window Working Set" name="Aggregate for window 1698151320404"/>
+</workingSetManager>

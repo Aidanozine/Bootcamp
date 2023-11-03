@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698825064303_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698825064392_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698826361001_3" label="oauth-jwt" name="oauth-jwt">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/oauth-jwt" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jwt-auth-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jwt-resource-server" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/oauth-ui-authorization-code-angular-jwt" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1698825072507_2" label="Window Working Set" name="Aggregate for window 1698825072507"/>
+</workingSetManager>

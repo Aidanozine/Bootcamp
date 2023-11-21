@@ -37,6 +37,8 @@ public class League {
 
     public static void main(String[] args) {
 
+        System.out.println("Let's Meet The Teams!");
+        System.out.println();
         HashMap<String, Integer> scoreBoard = new HashMap<>();
         scoreBoard.put(team1, score1);
         scoreBoard.put(team2, score2);
@@ -50,21 +52,21 @@ public class League {
         }
 
         System.out.println();
-        System.out.println("First Matches");
+        System.out.println("FIRST MATCHES");
         System.out.println();
-        System.out.println("Match 1: " + team1 + " VS " + team4);
+        System.out.println("Match 1: " + team1 + " VS " + team6);
         System.out.println("Outcome: " + '\n' + team1 + " " + teamRes1 + '\n' + team6 + " " + teamRes6);
 
         System.out.println();
-        System.out.println("Match 2: " + team2 + " VS " + team6);
+        System.out.println("Match 2: " + team2 + " VS " + team5);
         System.out.println("Outcome: " + '\n' + team2 + " " + teamRes2 + '\n' + team5 + " " + teamRes5);
 
         System.out.println();
-        System.out.println("Match 3: " + team3 + " VS " + team5);
+        System.out.println("Match 3: " + team3 + " VS " + team4);
         System.out.println("Outcome: " + '\n' + team3 + " " + teamRes3 + '\n' + team4 + " " + teamRes4);
 
         System.out.println();
-        System.out.println("First Matches Results");
+        System.out.println("FIRST MATCH RESULTS");
         System.out.println();
         matchPoints1();
         matchPoints2();
@@ -75,13 +77,13 @@ public class League {
         scoreBoard.put(team4, score4);
         scoreBoard.put(team5, score5);
         scoreBoard.put(team6, score6);
-        System.out.println();
+
         for (HashMap.Entry<String, Integer> entry : scoreBoard.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
 
         System.out.println();
-        System.out.println("Final Matches");
+        System.out.println("FINAL MATCHES");
         System.out.println();
         System.out.println("Match 1: " + team1 + " VS " + team4);
         System.out.println("Outcome: " + '\n' + team1 + " " + secTeamRes1 + '\n' + team4 + " " + secTeamRes4);
@@ -95,7 +97,7 @@ public class League {
         System.out.println("Outcome: " + '\n' + team3 + " " + secTeamRes3 + '\n' + team5 + " " + secTeamRes5);
 
         System.out.println();
-        System.out.println("Final Matches Results");
+        System.out.println("FINAL MATCH RESULTS");
         matchPoints4();
         matchPoints5();
         matchPoints6();
